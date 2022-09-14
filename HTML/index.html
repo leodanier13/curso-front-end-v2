@@ -63,6 +63,74 @@
         </section>
     </main>
     <hr/>
+
+    <!-- Tabelas -->
+    <table>
+        <caption>Notas em matemática</caption>
+        <thead>
+            <tr>
+                <th>Nome do Aluno</th>
+                <th>Notas do Aluno</th>
+            </tr>
+        </thead>
+        <thead>
+            <tbody>
+                <tr>
+                    <td>Aluno A</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Aluno B</td>
+                    <td>7</td>
+                </tr>
+            </tbody> 
+            <tfoot>  
+                <tr>
+                    <td>Média</td>
+                    <td>7.5</td>
+                </tr>
+            </tfoot> 
+        </thead>
+    </table>
+    <hr/>
+
+    <!-- Formularios -->
+    <h1>Formulários</h1>
+    <form>
+        <input type="text" placeholder="Seu nome" />
+        <br/>
+        <label for="email">Seu e-mail</label>
+        <input id="email" type="email" />
+        <br/>
+        <input type="tel" placeholder="Seu telefone" /><br/>
+        <input type="number" max="10" min="2" step="2"/><br/>
+        <input type="color"/><br/>
+        <input type="checkbox" id="checkbox-termos"/>Aceito os termos de uso<br/>
+        <input type="file"/><br/>
+        <p>
+            Qual sua cor favorita?
+        </p>
+        <input type="radio" name="cor-favorita" id="cor-vermelha"/> <label for="cor-vermelha">Vermelho</label>
+        <input type="radio" name="cor-favorita" id="cor-verde"/> <label for="cor-verde">Verde</label>
+        <input type="radio" name="cor-favorita" id="cor-azul"/> <label for="cor-azul">Azul</label>
+        <br/>
+        <label>Qual seu filme favorito?</label>
+        <select multiple>
+            <option>Filme A</option>
+            <option>Filme B</option>
+            <option>Filme C</option>
+        </select>
+        <br/>
+        <textarea></textarea>
+        <button type="submit">
+            Enviar
+        </button>
+        <button type="reset">
+            Limpar
+        </button>
+    </form>
+
+    <hr/>
     <a href="./containers.html">
         Ir para a página de Containers
     </a>
