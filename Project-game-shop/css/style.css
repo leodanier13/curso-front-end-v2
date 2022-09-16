@@ -1,0 +1,31 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    padding: 1.4rem 0;
+    background-color: #182c63;
+    color: #ffffff;
+}
+header nav li {
+    display: inline;
+    margin-left: 2rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+header nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.container {
+    max-width: 1288px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
