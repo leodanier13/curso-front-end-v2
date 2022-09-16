@@ -1,98 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portal de notícias</title>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
     <header>
-        <h1>Meu portal de notícias</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#" title="Ir para a seção de esportes">Esportes</a>
-                </li>
-                <li>
-                    <a href="#" title="Ir para a seção de economia">Economia</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Meu portal de notícias</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sports" title="Ir para a seção de esportes">Esportes</a>
+                    </li>
+                    <li>
+                        <a href="#economy" title="Ir para a seção de economia">Economia</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section>
-        <h2>Esportes</h2>
-        <article>
-            <img src="./media/índice.jpg" alt="Jogadores do Flamengo"/>
-            <header>
-                <time>
-                    Quarta-feira, 14/09/2022, 22:30
-                </time>
-            </header>
-            <h3>Classificatória: Flamengo bate São Paulo e vai à final da Copa do Brasil</h3>
-            <p>
-                O Flamengo pôs fim à euforia do São Paulo, venceu o segundo jogo da semifinal da Copa do Brasil, por 1 a 0, e agora espera o vencedor de Corinthians e Fluminense, que jogam nesta quinta-feira (15), para saber quem será seu adversário na decisão....
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </article>
-            </p>
-        
-        <article><br/>
-            <img src="./media/ea61ffe4-2b77-4be9-8e50-658839a82d7b.jpg.400x400_q75_box-192,0,1259,1067_crop_detail.jpg" alt="Jogadores de futebol americano"/>
-            <header>
-                <time>
-                    Segunda-feira, 12/09/2022, 15:43
-                </time>
-            </header>
-            <h3>'Pela primeira vez o Super Bowl será transmitido em streaming de 4K'</h3>
-            <p>
-                Pedro Doria conta que essa transmissão traz um importante adendo pelo fato de o esporte necessitar da qualidade de vídeo. Ele comenta que, porém, ainda não há uma previsão para que transmissões do tipo ocorram na Copa do Mundo, por exemplo.
-                <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </p>
-        </article>
+    <section id="sports">
+        <div class="container">
+            <h2>Esportes</h2>
+            <div class="articles">
+                <article>
+                    <img src="./media/índice.jpg" alt="Jogadores do Flamengo" />
+                    <header>
+                        <time class="creation-date">
+                            Quarta-feira, 14/09/2022, 22:30
+                        </time>
+                    </header>
+                    <h3>Classificatória: Flamengo bate São Paulo e vai à final da Copa do Brasil</h3>
+                    <p>
+                        O Flamengo pôs fim à euforia do São Paulo, venceu o segundo jogo da semifinal da Copa do Brasil, por
+                        1 a 0, e agora espera o vencedor de Corinthians e Fluminense, que jogam nesta quinta-feira (15),
+                        para saber quem será seu adversário na decisão....
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                    </p>
+                </article>
 
-        <article>
-            <img src="./media/nba.jpg" alt="Kyrie Irving jogador de basquete"/>
-            <header>
-                <time>
-                    Sábado, 13/10/2021, 08:53
-                </time>
-            </header>
-            <h3>"Brooklyn Nets" afasta Kyrie Irving por se recusar a tomar vacina</h3>
-            <p>A polêmica em torno de Irving se deve à recusa do jogador em revelar se foi vacinado ou não. Isso já estava impedindo que jogasse as partidas dos Nets em casa, por causa das restrições impostas pela cidade de Nova York.
-            <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </p>
-        </article>
+
+                <article><br />
+                    <img src="./media/ea61ffe4-2b77-4be9-8e50-658839a82d7b.jpg.400x400_q75_box-192,0,1259,1067_crop_detail.jpg"
+                        alt="Jogadores de futebol americano" />
+                    <header>
+                        <time class="creation-date">
+                            Segunda-feira, 12/09/2022, 15:43
+                        </time>
+                    </header>
+                    <h3>'Pela primeira vez o Super Bowl será transmitido em streaming de 4K'</h3>
+                    <p>
+                        Pedro Doria conta que essa transmissão traz um importante adendo pelo fato de o esporte necessitar
+                        da qualidade de vídeo. Ele comenta que, porém, ainda não há uma previsão para que transmissões do
+                        tipo ocorram na Copa do Mundo, por exemplo.
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                    </p>
+                </article>
+
+                <article>
+                    <img src="./media/nba.jpg" alt="Kyrie Irving jogador de basquete" />
+                    <header>
+                        <time class="creation-date">
+                            Sábado, 13/10/2021, 08:53
+                        </time>
+                    </header>
+                    <h3>"Brooklyn Nets" afasta Kyrie Irving por se recusar a tomar vacina</h3>
+                    <p>A polêmica em torno de Irving se deve à recusa do jogador em revelar se foi vacinado ou não. Isso já
+                        estava impedindo que jogasse as partidas dos Nets em casa, por causa das restrições impostas pela
+                        cidade de Nova York.
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                    </p>
+                </article>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>Economia</h2>
-        <article>
-            <img src="./media/dolar.jpg" alt="dolar americano"/>
-            <header>
-                <time>
-                    Quinta-feira, 15/09/2022, 11:45
-                </time>
-            </header>
-            <h3>Dólar cai para R$ 5,25 e fecha no menor valor em quase um mês</h3>
-            <p>O dólar comercial encerrou esta quarta-feira (27) vendido a R$ 5,251, com recuo de R$ 0,098 (-1,83%). A cotação abriu perto da estabilidade, mas passou a cair após a abertura dos mercados norte-americanos e despencou a partir das 15h, após o Federal Reserve (Fed, Banco Central dos Estados Unidos) anunciar o aumento dos juros básicos nos Estados Unidos em 0,75 ponto percentual.
-            <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </p>
-        </article>
 
-        <article>
-            <img src="./media/servico.jpg" alt="Trabalhador no laboratorio"/>
-            <header>
-                <time>
-                    Sexta-feira, 02/08/2022, 4:20.
-                </time>
-            </header>
-            <h3>Setor de serviços cresce 1,1% em julho</h3>
-            <p>
-            O volume de serviços prestados no Brasil cresceu 1,1% em julho em relação a junho, segundo dados divulgados nesta terça-feira (13) pelo Instituto Brasileiro de Geografia e Estatística (IBGE). Trata-se da terceira alta seguida, com ganho acumulado de 2,4%.
-            Na comparação com julho de 2021, o avanço foi de 6,3% - 17ª taxa positiva consecutiva.
-            <a href="#" title="Leia a notícia completa">Ler mais</a>
-            </p>
-        </article>
+    <section id="economy">
+        <div class="container">
+            <h2>Economia</h2>
+            <div class="articles">
+                <article>
+                    <img src="./media/dolar.jpg" alt="dolar americano" />
+                    <header>
+                        <time class="creation-date">
+                            Quinta-feira, 15/09/2022, 11:45
+                        </time>
+                    </header>
+                    <h3>Dólar cai para R$ 5,25 e fecha no menor valor em quase um mês</h3>
+                    <p>O dólar comercial encerrou esta quarta-feira (27) vendido a R$ 5,251, com recuo de R$ 0,098 (-1,83%). A
+                        cotação abriu perto da estabilidade, mas passou a cair após a abertura dos mercados norte-americanos e
+                        despencou a partir das 15h, após o Federal Reserve (Fed, Banco Central dos Estados Unidos) anunciar o
+                        aumento dos juros básicos nos Estados Unidos em 0,75 ponto percentual.
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                    </p>
+                </article>
+
+                <article>
+                    <img src="./media/servico.jpg" alt="Trabalhador no laboratorio" />
+                    <header>
+                        <time class="creation-date">
+                            Sexta-feira, 02/08/2022, 4:20.
+                        </time>
+                    </header>
+                    <h3>Setor de serviços cresce 1,1% em julho</h3>
+                    <p>
+                        O volume de serviços prestados no Brasil cresceu 1,1% em julho em relação a junho, segundo dados
+                        divulgados nesta terça-feira (13) pelo Instituto Brasileiro de Geografia e Estatística (IBGE). Trata-se
+                        da terceira alta seguida, com ganho acumulado de 2,4%.
+                        Na comparação com julho de 2021, o avanço foi de 6,3% - 17ª taxa positiva consecutiva.
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                    </p>
+                </article>
+
+                <article>
+                    <img src="./media/servico.jpg" alt="Trabalhador no laboratorio" />
+                    <header>
+                        <time class="creation-date">
+                            Sexta-feira, 02/08/2022, 4:20.
+                        </time>
+                    </header>
+                    <h3>Setor de serviços cresce 1,1% em julho</h3>
+                    <p>
+                        O volume de serviços prestados no Brasil cresceu 1,1% em julho em relação a junho, segundo dados
+                        divulgados nesta terça-feira (13) pelo Instituto Brasileiro de Geografia e Estatística (IBGE). Trata-se
+                        da terceira alta seguida, com ganho acumulado de 2,4%.
+                        Na comparação com julho de 2021, o avanço foi de 6,3% - 17ª taxa positiva consecutiva.
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                    </p>
+                </article>
+
+            </div>
+        </div>
     </section>
 </body>
+
 </html>
