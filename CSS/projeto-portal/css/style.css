@@ -10,7 +10,7 @@ body > header {
     background-color: #103150;
     padding: 20px 0;
     color: #f7f7f7;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 header .container {
@@ -58,7 +58,7 @@ section {
 
 section h2, 
 .articles article {
-    margin-bottom: 16px;
+    margin-bottom: 50px;
 }
 
 .articles article h3 {
@@ -102,9 +102,15 @@ section h2 {
 #economy {
     background-color: #f0f59f;
 }
+#entertainment {
+    background-color: #eb614250;
+}
 #newsletter{
     background-color: #fefefe;
     
+}
+#technology{
+    background-color: #152e4436;
 }
 
 #newsletter footer, h1 {
