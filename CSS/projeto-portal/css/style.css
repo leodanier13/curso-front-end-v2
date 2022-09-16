@@ -5,10 +5,12 @@
     text-decoration: none;
 }
 
+
 body > header {
-    background-color: #8932d2;
-    padding: 16px 0;
+    background-color: #103150;
+    padding: 20px 0;
     color: #f7f7f7;
+    font-size: 19px;
 }
 
 header .container {
@@ -31,13 +33,14 @@ header li a {
 .container {
     width: 1366px;
     margin: 0 auto;
+    text-align: center;
 
 }
 
 .articles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:center;
 }
 
 .articles article img {
@@ -64,7 +67,7 @@ section h2,
 }
 
 .articles article a {
-    background-color: blue;
+    background-color: #103150;
     color: #fff;
     padding: 5px;
     display: inline-block;
@@ -86,15 +89,53 @@ section h2,
 }
 
 section h2 {
-    font-size: 32px;
+    font-size: 38px;
+    text-align: center;
 }
 
 #sports {
     background-color: rgba(100, 255, 0, 0.2);
 }
 #sports .articles article a {
-    background-color: #009432;
+    background-color: #103150;
 }
 #economy {
     background-color: #f0f59f;
 }
+#newsletter{
+    background-color: #fefefe;
+    
+}
+
+#newsletter footer, h1 {
+    background-color: #103150;  
+    display: contents;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    color: #f7f7f7;
+    display: ruby-text;
+}
+
+.snGoOA_K1k6VDRC6PCPSrQ {
+    visibility: hidden !important;
+}
+
+.cognito {
+    height: 380px !important;
+    overflow: hidden !important;
+
+}
+
+@media (max-width: 425px) {
+    section nav,
+    section article {
+        width: 100%;
+    }  
+
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
