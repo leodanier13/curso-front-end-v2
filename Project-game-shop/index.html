@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css"/>
-    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Secular+One&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet" />
+        <link rel="icon" type="favicon" href="./images/logo.jpg">
     <title>Game House - A casa do seu game</title>
 </head>
+
 <body>
+
+    <!-- Start nav section -->
     <header>
         <div class="container">
             <h1>Game House</h1>
-            <nav>
+            <nav class="menu">
                 <ul>
-                    <li>
-                        <a href="#">Sobre a loja</a>
+                    <li class="ativo">
+                        <a href="#about">Sobre a loja</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#contact">Contato</a>
                     </li>
                     <li>
                         <a href="#">Produtos</a>
@@ -27,6 +36,89 @@
             </nav>
         </div>
     </header>
-    
+    <!-- End nav section -->
+
+    <!-- Start content section -->
+    <section id="about">
+        <div class="container">
+            <img class="store-logo" src="./images/logo-maior.jpg" alt="logo loja" />
+            <div>
+                <h2>Sobre a loja</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab tempore blanditiis provident
+                    dignissimos reiciendis ullam earum, facere amet itaque sed minus accusantium sunt, sint sequi
+                    veritatis et reprehenderit quae id!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, sequi sapiente? A vel non magni
+                    eligendi maxime quae sint commodi, recusandae labore voluptatum pariatur minima nulla eaque dolore,
+                    impedit neque!
+                </p>
+                <ul class="brands-list">
+                    <li><img src="./images/Nintendo-Logo-1968.jpg" alt="logo nintendo"></li>
+                    <li><img src="./images/ps-logo.jpg" alt="logo playstation"></li>
+                    <li><img src="./images/xbox-logo.png" alt="logo xbox"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End content section -->
+
+    <!-- Start contact section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Digite seu nome completo" required />
+                        <input type="email" placeholder="Digite seu e-mail" required />
+                        <input type="tel" placeholder="Digite seu telefone (opcional)"/>
+                        <textarea placeholder="Sua mensagem"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" title="Siga-nos no instagram">
+                                <img src="./images/instagram-logo.jpg" alt="logo do instagram"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no facebook">
+                                <img src="./images/Facebook-Logo.png" alt="logo do facebook"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nossa pagina no Youtube">
+                                <img src="./images/youtube-vector-logo.png"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <address>
+                        <h3>Nosso endereço</h3>
+                        Rua JavaScript n.124, Bairro Html - São Paulo - SP
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End contact section -->
+
+    <!-- Start footer section -->
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Game House - Todos os direitos reservados - 2022
+            </p>
+        </div>
+    </footer>
+    <!-- End footer section-->
 </body>
+
 </html>
