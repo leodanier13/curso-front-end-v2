@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio_html_js</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
     <div class="container">
         <h1>Formulário</h1>
         <h2>Digite um número</h2>
-        <form id="form">
-            <label for="number-a">Digite um número válido</label>
-            <input type="number" id="campo-a" required placeholder="Digite um número"/>
+        <form>
+            <div>
+                <label for="a">
+                    <span>Número A</span>
+                    <input type="number" id="a" />
+                </label>
+            </div>
 
-            <label>Digite outro número válido</label>
-            <input type="number" id="campo-b" required placeholder="Digite outro número"/>
-            <button id="btn-valida-number" type="submit">Validar</button>
-            <span role="alert" id="numberError" aria-hidden="true">Por favor digite um número válido</span>
+            <div>
+                <label for="b">
+                    <span>Número B</span>
+                    <input type="number" id="b" />
+                </label>
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+
+            <div class="feedback"></div>
         </form>
     </div>
 
     <script src="./main.js"></script>
 </body>
+
 </html>

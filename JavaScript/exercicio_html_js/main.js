@@ -1,19 +1,42 @@
-const submit = document.getElementById("submit");
+const submit = document.querySelector('button');
 
-submit.addEventListener("click", validate);
+function validate(a, b) {
+    if (!a || !b) {
+        return {
+            valid: false,
+            message: 'Preencha os números para A e B'
+        }
+    }
 
-function validate(e) {
-  e.preventDefault();
+    if (b > a) {
+        return {
+            valid: true,
+            message: 'Esse número é maior que A'
+        }
+    }
 
-  const validaCampoA = document.getElementById("campo-a");
-  let valid = true;
-
-  if (!validaCampoA.value) {
-    const numberError = document.getElementById("numberError");
-    numberError.classList.add("visible");
-    validaCampoA.classList.add("invalid");
-    numberError.setAttribute("aria-hidden", false);
-    numberError.setAttribute("aria-invalid", true);
-  }
-  return valid;
+    return {
+        valid: false,
+        message: 'Esse número é menor que A, coloque um número válido'
+    }
 }
+
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
+    const feedback = document.querySelector('.feedback');
+
+    const a = document.querySelector('#a').value;
+    const b = document.querySelector('#b').value;
+
+    const { valid, message } = validate(a, b);
+
+    if (valid) {
+        feedback.classList.add('valid');
+        feedback.classList.remove('invalid');
+    } else {
+        feedback.classList.remove('valid');
+        feedback.classList.add('invalid');
+    }
+
+    feedback.innerHTML = message;
+})
