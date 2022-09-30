@@ -50,3 +50,10 @@ button:hover {
   input.invalid {
     border-color: red;
   }
+  .valid {
+    color: green;
+  }
+  
+  .invalid {
+    color: red;
+  }
