@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação JavaScript</title>
+</head>
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <script>
+    /* 
+        Pedir para o usuário digitar dois números
+        e mostrar uma mensagem informando se foi aprovado
+        ou não. A nota de corte é 5.
+        Contudo, se qualquer uma das notas for zero, reprova 
+        automaticamente.
+
+        - Operadores lógicos
+
+        - ! Não (not)
+        - && E (and)
+        - || Ou (or)
+
+        - Controle de decisão
+
+        se a nota1 > 0 e nota2 > 0 e media > 5
+            mostra mensagem de
+            parabens
+        senão
+            mostra mensagem de 
+            reprovação
+    */
+
+    var nota1 = parseFloat(prompt("Digite a nota da primeira prova"));
+
+    var nota2 = parseFloat(prompt("Digite a nota da segunda prova"));
+    
+    var media = (nota1 + nota2) / 2;
+
+    alert(media > 7)
+
+    if(media > 7 && nota1 > 0 && nota2 > 0) {
+        alert("Parabéns! Você foi acima da média");
+    } else {
+        alert("Desculpe! Continue estudando");
+    }
+    
+    </script>
+</body>
+</html>
