@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação JavaScript</title>
+</head>
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <script>
+        /* 
+        Controle de decisão
+        
+        Se a nota > 7
+            Mostra mensagem de 
+            parabéns
+
+            Senão
+            Mostra mensagem de 
+            reprovação
+        */
+/*
+    var n1 = parseFloat(prompt("Digite a nota da primeira prova"));
+
+    var n2 = parseFloat(prompt("digite a nota da segunda prova"));
+
+    var media = (n1 + n2) / 2;
+
+    alert(media > 7);
+
+    if(media > 7) {
+        //bloco da verdade
+        alert("Parabéns! Você foi aprovado.6");
+    } else {
+        //bloco da mentira
+        alert("ops! Você foi reprovado.");
+    }
+*/
+    // fazer jogador1 digitar um numero
+    var nJogador1 = parseInt(prompt("Numero do jogador 1"));
+    
+    // fazer jogador2 digitar outro numero
+    var nJogador2 = parseInt(prompt("Numero do jogador 2"))
+    // se forem iguais, mostrar mensagem 'empate'
+    var empate = (nJogador1 == nJogador2)
+    if(nJogador1 === nJogador2) {
+        alert("Vocês empataram");
+    } else {
+        // sortear um numero entre 0 e 1
+        var nSorteado = parseInt(Math.random() * 2);
+        alert('nSorteado: ' + nSorteado);
+        // se o numero sorteado for 0, ganha quem escolher o numero MENOR
+        
+        if( (nSorteado === 0 && nJogador1 < nJogador2) || (nSorteado === 1 && nJogador1 > nJogador2) ){
+            alert('ganhou  jogador 1');
+        }else {
+            alert("Ganhou o jogador 2");
+        }
+
+    }
+
+    </script>
+</body>
+</html>

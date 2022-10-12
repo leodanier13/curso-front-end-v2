@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação JavaScript</title>
+</head>
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <script>
+        // Aula 3.1 - Repetições
+        // Pedir ao usuario para digitar um número.
+        // E mostrar a tabuada desse número de 1 a 1000.
+        // Não é indicado usar document.write profissionalmente.
+        
+        var numero = prompt('digite um numero');
+        numero = parseFloat(numero);
+
+        var indice = 0;
+        // repita até que indice seja <= 1000
+
+        while(indice <= 1000){
+            document.write( numero + ' x '+ indice +' = '+
+            (numero * indice) +' <br>');
+
+            if(indice % 10 === 0 && indice > 0){
+                document.write('<hr>');
+            }
+            indice = indice + 1;
+        }
+
+    </script>
+</body>
+</html>
