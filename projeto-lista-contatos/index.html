@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Lista de Contatos</title>
+</head>
+<body>
+    <main>
+        <form id="form">
+            <input type="hidden" name="id" id="id"/>
+            <input name="nome" type="text" maxlength="50"
+            placeholder="Nome completo" required />
+            <input name="telefone" type="text" maxlength="50" placeholder="Telefone de contato" required />
+            <input type="submit" value="Salvar" /> 
+        </form>
+        <div class="list">
+            <input id="pesquisa" type="text" placeholder="Pesquisar" onkeyup="listar(this.value)" />
+            <ul id="ul">
+
+            </ul>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
