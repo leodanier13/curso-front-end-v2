@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+}
+.header button {
+    position: absolute;
+    right: 18%;
+    margin-top: -30px;
+}
+.header i {
+    font-size: 23px;
+}
+.tarefas {
+    margin-top: 40px;
+    width: 60%;
+}
+.textInsert {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    width: 90%;
+}
+.divInsert {
+    padding: 10px;
+    background-color: lightcyan;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 3px 5px 10px 0px grey;
+}
+button {
+    width: 10%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.bx-plus {
+    font-size: 30px;
+    margin-left: 10px;
+    background-color: violet;
+    border-radius: 50%;
+    padding: 5px;
+    color: #fff;
+}
+.divLi {
+    margin-top: 20px;
+    padding: 10px;
+    background: lightgrey;
+    border-radius: 10px;
+    box-shadow: 6px 5px 10px 0px grey;
+    display: flex;
+    align-items: center;
+}
+.divLi span {
+    width: 80%;
+    color: dimgray;
+}
+.divLi input {
+    width: 10%;
+    outline: none;
+    accent-color: currentcolor;
+}
+.divLi i {
+    font-size: 22px;
+    color: brown;
+}
+li {
+    list-style-type: none;
+}
+.line-through {
+    text-decoration: line-through;
+}
