@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+    <header class="container">
+        <h1>Formulário de cadastro</h1>
+        <p>Preencha os campos abaixo para se inscrever</p>
+    </header>
+
+    <section id="contato">
+        <form>
+            <div class="formu-camp">
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome"  id="nome" required />              
+            </div>
+            <div class="formu-camp">
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="email"  id="email" />              
+            </div>
+            <div class="formu-camp">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone"  id="telefone" />              
+            </div>
+            <div class="formu-camp">
+                <label for="cpf">CPF</label>
+                <input type="cpf" name="cpf"  id="cpf" />              
+            </div>
+            <div class="formu-camp">
+                <label for="endereco">Endereço Completo</label>
+                <input type="endereco" name="endereco"  id="endereco" />              
+            </div>
+            <div class="formu-camp">
+                <label for="cep">Cep</label>
+                <input type="cep" name="cep"  id="cep" />              
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#telefone').mask('(00) 00000-0000', {
+                placeholder: '(DDD) 00000-0000'
+            })
+
+            $('#cpf').mask('000.000.000-00', {
+                placeholder: 'preencha seu CPF'
+            })
+
+            $('#cep').mask('00000-000', {
+                placeholder: 'CEP'
+            })
+
+            $('form').validate ({
+                rules: {
+                    nome: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    telefone: {
+                        required: true
+                    },
+                    cpf: {
+                        required: true,
+                        cpf: true
+                    },
+                    cep: {
+                        required: true,
+                        cep: true
+                    }
+                },
+                messages: {
+                    nome: 'Insira o Nome completo',
+                    email: 'Digite um Email válido',
+                    telefone: 'Digite seu DDD + telefone',
+                    cpf: 'Preencha seu CPF',
+                    cep: 'Preencha seu CEP'
+                },
+                submitHandler: function(form){
+                    console.log(form)
+                },
+                invalidHandler: function(evento, validador) {
+                    let camposIncorretos = validator = numberOfInvalids();
+                    if (camposIncorretos) {
+                        alert(`Existem ${camposIncorretos} campos incorretos  ou não preenchidos`)
+                    }
+                }
+            })
+
+        })
+
+
+    </script>
+</body>
+</html>
