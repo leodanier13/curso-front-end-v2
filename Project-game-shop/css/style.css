@@ -5,6 +5,11 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+.container {
+    max-width: 1288px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 header {
     padding: 1.4rem 0;
@@ -23,17 +28,13 @@ header nav li a {
     color: #ffffff;
     text-decoration: none;
 }
-.container {
-    max-width: 1288px;
-    width: 100%;
-    margin: 0 auto;
-}
 header .container,
 section .container {
-    display: flex;
+    
     align-items: center;
     justify-content: space-between;
 }
+
 
 
 
@@ -59,12 +60,6 @@ section p {
 }
 .store-logo {
     margin-right: 3em;
-}
-header li a:hover{
-    font-family: 'Secular One', sans-serif;
-    font-size: 1.3rem;
-    background-color: rgba(0, 17, 255, 0.397);
-    border-radius: 3rem;
 }
 .social-links img {
     height: 24px;
