@@ -3,27 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-header,
-section h2,
-section h3,
-form button {
-    font-family: 'Secular One', sans-serif;
-}
-body, input, textarea {
     font-family: 'Roboto', sans-serif;
 }
+
 header {
     padding: 1.4rem 0;
     background-color: #182c63;
     color: #ffffff;
 }
+
 header nav li {
     display: inline;
     margin-left: 2rem;
     color: #ffffff;
     font-size: 1.2rem;
 }
+
 header nav li a {
     color: #ffffff;
     text-decoration: none;
@@ -39,6 +34,9 @@ section .container {
     align-items: center;
     justify-content: space-between;
 }
+
+
+
 .brands-list img {
     height: 3.5em;
 }
