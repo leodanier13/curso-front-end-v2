@@ -30,7 +30,7 @@ header nav li a {
 }
 header .container,
 section .container {
-    
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -45,6 +45,7 @@ section .container {
     display: inline;
     margin-right: 1rem;
 }
+
 section .container {
     align-items: flex-start;
 }
