@@ -3,35 +3,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-header,
-section h2,
-section h3,
-form button {
-    font-family: 'Secular One', sans-serif;
-}
-body, input, textarea {
     font-family: 'Roboto', sans-serif;
 }
+.container {
+    max-width: 1288px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 header {
     padding: 1.4rem 0;
     background-color: #182c63;
     color: #ffffff;
 }
+
 header nav li {
     display: inline;
     margin-left: 2rem;
     color: #ffffff;
     font-size: 1.2rem;
 }
+
 header nav li a {
     color: #ffffff;
     text-decoration: none;
-}
-.container {
-    max-width: 1288px;
-    width: 100%;
-    margin: 0 auto;
 }
 header .container,
 section .container {
@@ -39,6 +34,10 @@ section .container {
     align-items: center;
     justify-content: space-between;
 }
+
+
+
+
 .brands-list img {
     height: 3.5em;
 }
@@ -46,6 +45,7 @@ section .container {
     display: inline;
     margin-right: 1rem;
 }
+
 section .container {
     align-items: flex-start;
 }
@@ -61,12 +61,6 @@ section p {
 }
 .store-logo {
     margin-right: 3em;
-}
-header li a:hover{
-    font-family: 'Secular One', sans-serif;
-    font-size: 1.3rem;
-    background-color: rgba(0, 17, 255, 0.397);
-    border-radius: 3rem;
 }
 .social-links img {
     height: 24px;
