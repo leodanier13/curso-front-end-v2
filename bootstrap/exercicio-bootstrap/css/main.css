@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1, p {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(127, 255, 212, 0.13);
+    height: 2px;
+    width: 100%;
+}
+
+section {
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-top: 40px;
+}
+form textarea {
+    resize: none;
+}
+
+
