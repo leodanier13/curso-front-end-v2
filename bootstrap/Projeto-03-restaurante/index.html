@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Start navbar menu -->
+        <header class="navbar navbar-expand-lg sticky-top p-3">
+            <div class="container">
+                <h1 class="navbar-brand m-0">Risottaria</h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item fw-bold">
+                            <a href="" class="nav-link active">
+                                <i class="bi bi-house me-1"></i>
+                                Sobre o restaurante
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bolder">
+                            <a href="" class="nav-link">
+                                <i class="bi bi-calendar me-1"></i>
+                                Eventos
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bolder">
+                            <a href="" class="nav-link">
+                                <i class="bi bi-journal-text me-1"></i>
+                                Nosso cardápio
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bolder">
+                            <a href="" class="nav-link">
+                                <i class="bi bi-chat-left-text me-1"></i>
+                                Fazer reserva
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <!-- End navbar menu -->
+
+    <!-- Start about us -->
+    <section id="sobre-o-restaurante">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/slides/slide1.png" alt="foto interna do restaurante">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/slides/slide2.png" alt="Duas taças de vinho da casa">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/slides/slide3.png" alt="refeiçoes do restaurante">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+
+        <!-- Parte da biografia -->
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="images/restaurante.jpg" alt="restaurante parte interna">
+                    </div>
+                    <div class="col-md-7"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End about us -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
