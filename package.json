@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.1"
+  },
+  "name": "curso-front-end-v2",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leodanier13/curso-front-end-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leodanier13/curso-front-end-v2/issues"
+  },
+  "homepage": "https://github.com/leodanier13/curso-front-end-v2#readme"
+}
