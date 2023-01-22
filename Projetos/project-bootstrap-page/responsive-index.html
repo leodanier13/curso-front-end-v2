@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DRA. Emanuelle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./images/canvas.png">
+</head>
+
+<body>
+    <!--Start navbar -->
+    <nav class="navbar navbar-expand-lg text-bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="responsive-index.html">Dra. Emanuelle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-1">Agendamentos</a>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="#home">Sobre mim</a> </li>
+                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> Portfólio </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cursos</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="#">Procedimentos</a></li>
+                            <li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#questions">Perguntas frequentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sintomasSinais"><strong>Sintomas e sinais</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rodape">Rodapé</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar-->
+
+    <!-- start hero section -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start" id="home">
+        <div class="container py-5">
+            <div class="d-sm-flex align-items-center justify-content-between py-5">
+                <div>
+                    <h1>Bem-vindos, eu sou a <span class="text-bg-danger">Dra. Emanuelle</span></h1>
+                    <h3 class="my-4">Cirurgiã dentista</h3>
+                    <h5>CRO-XXXX</h5>
+                    <p class="lead my-4">
+                        Gostaria de agradecer pela visita e interesse em nosso site. Aqui você verá um pouco de nossos
+                        serviços de dentista e odontologia, bem como de nossa estrutura da clínica odontológica.
+                        Mantemos uma área de informações odontológicas para pacientes sempre atualizada, que você pode
+                        acessar através do Blog.
+                    </p>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Agendar consulta</a>
+                </div>
+                <a href="#">
+                    <img src="images/indice.jpg" class="img-thumbnail" width="2000">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--end of hero section-->
+
+    <!-- start newsletter section-->
+    <section class="bg-primary text-light p-5" id="newsletter">
+        <div class="container py-5">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">
+                    Cadastre-se na nossa newsletter para receber novidades.
+                </h3>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Digite seu Email" name="email">
+                    <button class="btn btn-dark btn-lg" class="#enviar">
+                        <i class="bi bi-send"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end newsletter section -->
+
+    <!-- start services section-->
+    <section class="p-5" id="services">
+        <div class="card-group py-5">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-light text-dark p-5">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-chat-right-text-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Implantodontia
+                            </h3>
+                            <p class="card-text">
+                                Ramo da Odontologia que se destina ao tratamento do edentulismo com reabilitações
+                                protéticas suportadas ou retidas por implantes dentários.
+                            </p>
+                            <a href="#newsletter" class="btn btn-primary">
+                                Mais informações
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark p-5">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-chat-right-text-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Ortodontia
+                            </h3>
+                            <p class="card-text">
+                                Prevenção e tratamento dos problemas de crescimento, desenvolvimento e amadurecimento da
+                                face, dos arcos dentários e da oclusão.
+                            </p>
+                            <a href="#newsletter" class="btn btn-primary">
+                                Mais informações
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark p-5">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-chat-right-text-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Prótese Fixa
+                            </h3>
+                            <p class="card-text">
+                                É a área que lida com a reposição e/ou restauração de dentes através com a de
+                                substitutos artificiais que não são prontamente removidos.
+                            </p>
+                            <a href="#newsletter" class="btn btn-primary">
+                                Mais informações
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark p-5">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-chat-right-text-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Clareamento dentário
+                            </h3>
+                            <p class="card-text">
+                                Tratamento realizado com substâncias químicas, que modificam a cor do dente. O principal
+                                ingrediente do clareamento dental é oxigênio.
+                                <a href="#newsletter" class="btn btn-primary">
+                                    Mais informações
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark p-5">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-chat-right-text-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Tratamento de canal
+                            </h3>
+                            <p class="card-text">
+                                Consiste na retirada da polpa do dente, que é um tecido encontrado em sua parte interna,
+                                uma vez que a polpa foi danificada, infeccionada ou morta.
+                            </p>
+                            <a href="#newsletter" class="btn btn-primary">
+                                Mais informações
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark p-5">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-chat-right-text-fill"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Periodontia
+                            </h3>
+                            <p class="card-text">
+                                Estuda e trata as doenças do sistema de implantação e suporte dos dentes. Este aparelho
+                                é formado por osso alveolar e ligamento periodontal
+                            </p>
+                            <a href="#newsletter" class="btn btn-primary">
+                                Mais informações
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end services section-->
+
+    <!--start about section-->
+    <section class="p-5" id="about">
+        <div class="container py-5">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md">
+                    <a href="#"><img src="./images/pexels-anna-shvets-3845625.jpg" class="img-fluid" width="75%"></a>
+                </div>
+                <div class="col-md">
+                    <h2>Conceitos Tecnológicos</h2>
+                    <h5> Empregados nos tratamentos</h5>
+                    <p>Procuramos acompanhar e utilizar as mais modernas técnicas e materiais disponíveis no mercado
+                        mundial, desde que apresentem suporte científico.</p>
+                    <a href="#newsletter" class="btn btn-primary mt-3"><i class="bi bi-arrow-return-right"></i>Saber
+                        mais</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--end about section-->
+
+    <!-- start learn section -->
+    <section class="bg-dark text-light p-5" id="learn">
+        <div class="container py-5">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Conceitos Tecnológicos</h2>
+                    <h5> Empregados nos tratamentos</h5>
+                    <p>Diariamente são introduzidos novos produtos neste mercado muito competitivo. Infelizmente,
+                        fabricantes têm feito marketing direto para o público, como uma maneira de pressionar o
+                        profissional ao consumo de determinada técnica e/ou equipamento. Existem muitas panacéias que
+                        não têm trabalhos científicos sérios que justifiquem sua inclusão na nossa atividade
+                        profissional diária.</p>
+                    <a href="#newsletter" class="btn btn-light mt-3"><i class="bi bi-arrow-return-right"></i>Saber
+                        mais</a>
+                </div>
+                <div class="col-md">
+                    <a href="#">
+                        <img src="./images/logo.jpg" class="img-fluid" width="60%">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- end learn section -->
+
+    <!-- star F&Q section -->
+
+    <section class="p-5" id="questions">
+        <div class="container py-5">
+            <h2 class="text-center mb-4"><strong>Mas por que consultar conosco?</strong></h2>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            EQUIPE ESPECIALIZADA
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Contamos com uma equipe especializada e comprometida com o profissionalismo em realizar o
+                            melhor tratamento odontológico.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ESTRUTURA E TECNOLOGIA
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Contamos com uma estrutura moderna e também investimos no que tem de mais moderno em
+                                tecnologias para que os pacientes tenham um melhor resultado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ATENDIMENTO PERSONALIZADO
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Pensando no bem - estar e satisfação do paciente, nós realizamos um atendimento
+                            personalizado na particularidade de cada cliente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Agendar consulta</a>
+    </section>
+
+    <!-- end F&Q section -->
+
+    <!-- Start instraction section-->
+    <section class="p-5 bg-primary" id="sintomasSinais">
+        <div class="container py-5">
+            <h2 class="text-center text-white">Sintomas que você precisa de um Dentista</h2>
+
+            <p class="lead text-center text-white mb-5">
+                dente podredente podredente podredente podredente podredente podredente podredente podredente podredente
+                podredente podredente podredente podredente podredente podredente podredente podredente podredente
+                podredente podre
+            </p>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center p-5">
+                            <img src="./images/canvas.png" class="rounded-circle mb-3" width="100%">
+                            <h3 class="card-title mb-3">Dra. Emanuelle de Carvalho Bueno</h3>
+                            <p class="card-text">
+                                <li>
+                                    Formada em 2022 pela Universidade de Uberaba - Uniube
+                                </li>
+                            </p>
+                            <p class="card-text">
+                                <li>
+                                    cirurgiã dentista | CRO-XXXX
+                                </li>
+                            </p>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1 lead"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center p-5">
+                            <img src="./images/canvas.png" class="rounded-circle mb-3" width="100%">
+                            <h3 class="card-title mb-3">Dra. Emanuelle de Carvalho Bueno</h3>
+                            <p class="card-text">
+                                <li>
+                                    Formada em 2022 pela Universidade de Uberaba - Uniube
+                                </li>
+                            </p>
+                            <p class="card-text">
+                                <li>
+                                    cirurgiã dentista | CRO-XXXX
+                                </li>
+                            </p>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1 lead"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center p-5">
+                            <img src="./images/canvas.png" class="rounded-circle mb-3" width="100%">
+                            <h3 class="card-title mb-3">Dra. Emanuelle de Carvalho Bueno</h3>
+                            <p class="card-text">
+                                <li>
+                                    Formada em 2022 pela Universidade de Uberaba - Uniube
+                                </li>
+                            </p>
+                            <p class="card-text">
+                                <li>
+                                    cirurgiã dentista | CRO-XXXX
+                                </li>
+                            </p>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1 lead"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center p-5">
+                            <img src="./images/canvas.png" class="rounded-circle mb-3" width="100%">
+                            <h3 class="card-title mb-3">Dra. Emanuelle de Carvalho Bueno</h3>
+                            <p class="card-text">
+                                <li>
+                                    Formada em 2022 pela Universidade de Uberaba - Uniube
+                                </li>
+                            </p>
+                            <p class="card-text">
+                                <li>
+                                    cirurgiã dentista | CRO-XXXX
+                                </li>
+                            </p>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1 lead"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1 lead"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end instraction section -->
+
+    <!-- Start agended section -->
+    <section id="agendamento">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h1>Agendar</h1>
+                    <p>Ficou interessado em agendar sua consulta? preencha os campos
+                        do formulario para receber nosso atendimento.</p>
+                
+                <div class="col">
+                    <form class="form">
+
+                        <div class="input-group">
+                            <input type="text" name="nome" placeholder="digite seu nome completo">
+                        </div><br>
+
+                        <div class="input-group">
+                            <input type="text" name="telefone" placeholder="digite seu nº de telefone">
+                        </div><br>
+
+                        <div class="input-group">
+                            <input type="text" name="email" placeholder="digite seu melhor email">
+                        </div><br>
+
+                        <button class="btn btn-dark btn-lg" class="#home">
+                            agendar
+                        </button>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End agended section-->
+
+    <!-- Start modal section -->
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>Ficou interessado em agendar sua consulta? preencha os campos do formulario para receber nosso
+                        atendimento.</p>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <h6>Não perca tempo, agende sua consulta. </h6>
+
+
+                    <form class="form">
+                        <div class="input-group">
+                            <input type="text" name="nome" placeholder="digite seu nome completo">
+                        </div><br>
+
+                        <div class="input-group">
+                            <input type="text" name="email" placeholder="digite seu melhor email">
+                        </div><br>
+
+                        <div class="input-group">
+                            <input type="text" name="telefone" placeholder="digite seu número de telefone">
+                        </div><br>
+
+                        <button type="submit" class="btn btn-md btn-success" id="form">Solicitar
+                            contato</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal section -->
+
+    <!-- Start footer section -->
+    <footer id="rodape" class="page-footer p-5 text-md-left">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase font-weight-bold mb-4">
+                        Dra. Emanuelle
+                    </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur fugiat facere
+                        officiis explicabo minus? Dolorem dolores nesciunt placeat.
+                    </p>
+                    <a href="#"><i class="bi bi-facebook text-dark mx-1 lead"></i></a>
+                    <a href="#"><i class="bi bi-instagram text-dark mx-1 lead"></i></a>
+                    <a href="#"><i class="bi bi-twitter text-dark mx-1 lead"></i></a>
+                    <a href="#"><i class="bi bi-linkedin text-dark mx-1 lead"></i></a>
+                </div>
+                <div class="col-lg-2col-md-2 mx-auto">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Serviços</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1"><a href="#modal-1">IMPLANTE DENTÁRIO</a></li>
+                        <li class="mb-1"><a href="#">CLAREAMENTO DENTAL</a></li>
+                        <li class="mb-1"><a href="#">ODONTOLOGIA ESTÉTICA</a></li>
+                        <li class="mb-1"><a href="#">ODONTOLOGIA PREVENTIVA</a></li>
+                        <li class="mb-1"><a href="#">ODONTOLOGIA RESTAURADORA</a></li>
+                        <li class="mb-1"><a href="#">DENTES DO SISO</a></li>
+                        <li class="mb-1"><a href="#">TRATAMENTO DE CANAL NO DENTE</a></li>
+                        <li class="mb-1"><a href="#">TRATAMENTO DE GENGIVA</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2col-md-2 mx-auto">
+                    <h5 class="text-uppercase font-weight-bold mb-4">Voltar</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-1"><a href="#home">Início</a></li>
+                        <li class="mb-1"><a href="#">Agendamentos</a></li>
+                        <li class="mb-1"><a href="#sevices">Serviços</a></li>
+                        <li class="mb-1"><a href="#questions">Perguntas Frequentes</a></li>
+                        <li class="mb-1"><a href="#sintomasSinais">Sintomas e Sinais</a></li>
+                        <li class="mb-1"><a href="#rodape">Você está aqui!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end footer section -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
