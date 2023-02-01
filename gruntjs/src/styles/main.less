@@ -34,13 +34,13 @@ button {
     margin-top: 16px;
     border-radius: 8px;
     background-color: @corFonteBotao;
-    color: @corFonteBotao;
+    color: #fff;
     font-family: @corBotao;
     transition: all 0.4s ease-out;
 }
 
 button:hover {
-    background-color: @corFundo;
+    background-color: @borderLetreiro;
 }
 
 input {
@@ -51,6 +51,19 @@ input {
     border: none;
     background-color: @fundoLetreiro;
     text-align: center;
-    color: @corFonteBotao;
-    border-bottom: 16px solid @borderLetreiro;
+    color: #fff;
+    border-bottom: 6px solid @borderLetreiro;
+}
+
+.resultado {
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted #fff;
+    display: none;
+
+    span {
+        font-weight: bold;
+        font-size: 2em;
+        display: block;
+    }
 }

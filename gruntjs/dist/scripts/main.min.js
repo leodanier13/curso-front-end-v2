@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){document.getElementById("form-sorteador").addEventListener("submit",function(e){e.preventDefault();e=document.getElementById("numero-maximo").value,e=parseInt(e),e=Math.random()*e,e=Math.floor(1+e);document.getElementById("resultado-valor").innerText=e,document.querySelector(".resultado").style.display="block"})});

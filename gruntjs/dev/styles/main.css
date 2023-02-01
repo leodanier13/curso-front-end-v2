@@ -22,12 +22,12 @@ button {
   margin-top: 16px;
   border-radius: 8px;
   background-color: #000;
-  color: #000;
+  color: #fff;
   font-family: #f7b7;
   transition: all 0.4s ease-out;
 }
 button:hover {
-  background-color: #5e51e6;
+  background-color: #fff0;
 }
 input {
   display: block;
@@ -37,6 +37,17 @@ input {
   border: none;
   background-color: rgba(48, 56, 92, 0.575);
   text-align: center;
-  color: #000;
-  border-bottom: 16px solid #fff0;
+  color: #fff;
+  border-bottom: 6px solid #fff0;
+}
+.resultado {
+  padding: 16px;
+  margin-top: 120px;
+  border: 8px dotted #fff;
+  display: none;
+}
+.resultado span {
+  font-weight: bold;
+  font-size: 2em;
+  display: block;
 }
